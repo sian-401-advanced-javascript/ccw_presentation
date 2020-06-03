@@ -1,0 +1,616 @@
+/* html, body{
+height: 100%;
+margin: 0px;
+position: absolute;
+width: 100%;
+} */
+
+/* body {
+margin: 0px;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+
+
+background-repeat: no-repeat;
+background-size: cover; 
+background-position: center;
+
+} */
+
+/* * {
+margin: 0;
+padding: 0;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+}
+
+body {
+background: url("https://cdn.wallpapersafari.com/74/61/Z1vSow.gif"); */
+/* background-color: lightpink; */
+/* background-size: cover;
+height: 100vh;
+cursor: none;
+}
+
+.spotlight {
+position: absolute;
+height: 100%;
+width: 100%;
+background-image: radial-gradient(
+circle,
+transparent 0%,
+rgba(0, 0, 0, 1) 40%
+);
+}
+
+section {
+margin: 20px;
+}
+#one, #two, #three, #four, #five, #six  {
+width: 250px;
+height: 150px;
+
+}
+.centered{
+position: absolute;
+text-align: center;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: 'Jolly Lodger';
+}
+
+
+#one, #demo{
+grid-area: imgSix;
+margin: 2%;
+
+}
+#two, #about{
+grid-area: imgOne;
+}
+
+#ops{
+width:220px;
+height: auto;
+
+}
+#three, #ops{
+grid-area: imgTwo;
+}
+#four, #strength{
+grid-area: imgThree;
+}
+#five, #sg {
+grid-area: imgFour;
+}
+#six, #pd {
+grid-area: imgFive;
+}
+
+
+.container {
+position: fixed; 
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: grid;
+grid-template-columns:  40% 40% 40% ;
+grid-template-rows: auto;
+justify-items: center;
+justify-content: center;	
+grid-template-areas: 
+" . imgOne ."
+"imgTwo . imgThree"
+". imgFour ."
+"imgFive . imgSix";
+}
+
+p {
+position: absolute; 
+left: 0;
+right: 0; 
+margin: 15px 0;
+padding: 0 5px;
+font-family: impact;
+font-size: 2.5em;
+text-transform: uppercase;
+color: white;
+letter-spacing: 1px;
+text-shadow:2px 2px 0 #000,
+-2px -2px 0 #000,
+2px -2px 0 #000,
+-2px 2px 0 #000,
+0px 2px 0 #000,
+2px 0px 0 #000,
+0px -2px 0 #000,
+-2px 0px 0 #000,
+2px 2px 5px #000;
+} */
+
+/* .bottom {
+bottom: 0;
+}
+
+.top {
+top: 0;
+} */
+
+
+/* * {
+cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;}
+*/
+
+
+
+
+
+
+
+
+
+
+.kontext {
+width: 100%;
+height: 100%;
+}
+
+.kontext .layer {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+visibility: hidden;
+box-shadow: 0px 0px 120px rgba( 0, 0, 0, 0.8 );
+}
+
+.kontext .layer.show {
+visibility: visible;
+}
+
+.kontext.capable {
+-webkit-perspective: 1000px;
+-moz-perspective: 1000px;
+perspective: 1000px;
+
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+.kontext.capable .layer {
+-webkit-transform: translateZ( -100px );
+-moz-transform: translateZ( -100px );
+transform: translateZ( -100px );
+}
+
+.kontext.capable .layer.show {
+-webkit-transform: translateZ( 0px );
+-moz-transform: translateZ( 0px );
+transform: translateZ( 0px );
+}
+
+.kontext.capable.animate .layer.show.right {
+-webkit-animation: show-right 1s forwards ease;
+-moz-animation: show-right 1s forwards ease;
+animation: show-right 1s forwards ease;
+}
+
+.kontext.capable.animate .layer.hide.right {
+-webkit-animation: hide-right 1s forwards ease;
+-moz-animation: hide-right 1s forwards ease;
+animation: hide-right 1s forwards ease;
+}
+
+.kontext.capable.animate .layer.show.left {
+-webkit-animation: show-left 1s forwards ease;
+-moz-animation: show-left 1s forwards ease;
+animation: show-left 1s forwards ease;
+}
+
+.kontext.capable.animate .layer.hide.left {
+-webkit-animation: hide-left 1s forwards ease;
+-moz-animation: hide-left 1s forwards ease;
+animation: hide-left 1s forwards ease;
+}
+
+
+/* CSS animation keyframes */
+
+@-webkit-keyframes show-right {
+0%   { -webkit-transform: translateZ( -200px ); }
+40%  { -webkit-transform: translate( 40%, 0 ) scale( 0.8 ) rotateY( -20deg ); }
+100% { -webkit-transform: translateZ( 0px ); }
+}
+
+@-webkit-keyframes hide-right {
+0%   { -webkit-transform: translateZ( 0px ); visibility: visible; }
+40%  { -webkit-transform: translate( -40%, 0 ) scale( 0.8 ) rotateY( 20deg ); }
+100% { -webkit-transform: translateZ( -200px ); visibility: hidden; }
+}
+
+@-moz-keyframes show-right {
+0%   { -moz-transform: translateZ( -200px ); }
+40%  { -moz-transform: translate( 40%, 0 ) scale( 0.8 ) rotateY( -20deg ); }
+100% { -moz-transform: translateZ( 0px ); }
+}
+
+@-moz-keyframes hide-right {
+0%   { -moz-transform: translateZ( 0px ); visibility: visible; }
+40%  { -moz-transform: translate( -40%, 0 ) scale( 0.8 ) rotateY( 20deg ); }
+100% { -moz-transform: translateZ( -200px ); visibility: hidden; }
+}
+
+@keyframes show-right {
+0%   { transform: translateZ( -200px ); }
+40%  { transform: translate( 40%, 0 ) scale( 0.8 ) rotateY( -20deg ); }
+100% { transform: translateZ( 0px ); }
+}
+
+@keyframes hide-right {
+0%   { transform: translateZ( 0px ); visibility: visible; }
+40%  { transform: translate( -40%, 0 ) scale( 0.8 ) rotateY( 20deg ); }
+100% { transform: translateZ( -200px ); visibility: hidden; }
+}
+
+
+@-webkit-keyframes show-left {
+0%   { -webkit-transform: translateZ( -200px ); }
+40%  { -webkit-transform: translate( -40%, 0 ) scale( 0.8 ) rotateY( 20deg ); }
+100% { -webkit-transform: translateZ( 0px ); }
+}
+
+@-webkit-keyframes hide-left {
+0%   { -webkit-transform: translateZ( 0px ); visibility: visible; }
+40%  { -webkit-transform: translate( 40%, 0 ) scale( 0.8 ) rotateY( -20deg ); }
+100% { -webkit-transform: translateZ( -200px ); visibility: hidden; }
+}
+
+@-moz-keyframes show-left {
+0%   { -moz-transform: translateZ( -200px ); }
+40%  { -moz-transform: translate( -40%, 0 ) scale( 0.8 ) rotateY( 20deg ); }
+100% { -moz-transform: translateZ( 0px ); }
+}
+
+@-moz-keyframes hide-left {
+0%   { -moz-transform: translateZ( 0px ); visibility: visible; }
+40%  { -moz-transform: translate( 40%, 0 ) scale( 0.8 ) rotateY( -20deg ); }
+100% { -moz-transform: translateZ( -200px ); visibility: hidden; }
+}
+
+@keyframes show-left {
+0%   { transform: translateZ( -200px ); }
+40%  { transform: translate( -40%, 0 ) scale( 0.8 ) rotateY( 20deg ); }
+100% { transform: translateZ( 0px ); }
+}
+
+@keyframes hide-left {
+0%   { transform: translateZ( 0px ); visibility: visible; }
+40%  { transform: translate( 40%, 0 ) scale( 0.8 ) rotateY( -20deg ); }
+100% { transform: translateZ( -200px ); visibility: hidden; }
+}
+
+
+/* Dimmer */
+
+.kontext .layer .dimmer {
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+visibility: hidden;
+background: transparent;
+}
+
+.kontext.capable.animate .layer .dimmer {
+-webkit-transition: background 1s ease;
+-moz-transition: background 1s ease;
+transition: background 1s ease;
+}
+
+.kontext.capable.animate .layer.hide .dimmer {
+visibility: visible;
+background: rgba( 0, 0, 0, 0.7 );
+}
+
+
+
+
+/* Styles for the demo */
+
+html,
+body {
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+overflow: hidden;
+}
+
+body {
+background-color: #222;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+background-repeat: repeat;
+
+font-family: Helvetica, sans-serif;
+font-size: 16px;
+color: #fff;
+}
+
+.layer {
+text-align: center;
+text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.1 );
+}
+
+.layer {
+position: absolute; 
+left: 0;
+right: 0; 
+margin: 15px 0;
+padding: 0 5px;
+font-family: impact;
+
+text-transform: uppercase;
+color: white;
+letter-spacing: 1px;
+text-shadow:2px 2px 0 #000,
+-2px -2px 0 #000,
+2px -2px 0 #000,
+-2px 2px 0 #000,
+0px 2px 0 #000,
+2px 0px 0 #000,
+0px -2px 0 #000,
+-2px 0px 0 #000,
+2px 2px 5px #000;
+}
+
+
+.layer h2 {
+position: relative;
+top: 10%;
+width: 100%;
+text-align: center;
+margin: 0;
+font-size: 6.25em;
+}
+
+.layer ul {
+text-align: left;
+font-size: 3em;
+margin-left: 30%;
+}
+
+#pdList{
+text-align: center;
+width: 60%;
+font-size: 18pt;
+/* text-shadow: none; */
+position: absolute;
+left: 17%;
+margin-top: 5%;
+
+}
+
+#remember {
+    text-align: left;
+    font-size: 50px;
+    list-style: none;
+    }
+.layer div .intro {
+list-style: none;
+position: relative;
+top: 30%;
+width: 100%;
+text-align: center;
+margin: 0;
+}
+
+.iSwearBox {
+margin-top: -5%;
+}
+
+#noGood{
+width: 30%;
+}
+
+#henok {
+width:auto;
+height: 250px;
+}
+
+#randee {
+width: auto;
+height: 250px;
+}
+
+#sian{
+height: 250px;
+width: auto;
+}
+
+.layer p {
+position: relative;
+top: 20%;
+margin: 0;
+}
+
+.layer.one {
+width: 100%;
+height: 100%;
+background: url("https://wallpapercave.com/wp/wp5614100.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.layer.two {
+background: url("https://cutewallpaper.org/21/harry-potter-desktop-wallpaper-tumblr/Harry-Potter-Desktop-Wallpapers-Top-Free-Harry-Potter-.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.layer.three {
+background: url("https://simplywallpaper.net/pictures/2010/11/22/Hogwarts-Express-Harry-Potter-and-the-Deathly-Hallows-Wallpaper.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.layer.four {
+background: url("https://www.ecopetit.cat/wpic/mpic/190-1907229_harry-potter-hd-desktop-wallpapers-for-19201200-harry.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.layer.five {
+background: url("https://cdn.wallpapersafari.com/74/61/Z1vSow.gif");
+background-repeat: no-repeat;
+background-size: cover; 
+background-position: left;
+}
+
+.layer.six {
+background: #64b9d2;
+}
+
+.bullets {
+position: absolute;
+width: 100%;
+bottom: 20px;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+.bullets li {
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+margin: 0 3px;
+background: rgba( 255, 255, 255, 0.5 );
+box-shadow: 0px 0px 4px rgba( 0, 0, 0, 0.2 );
+cursor: pointer;
+
+-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+}
+
+.bullets li:hover {
+background: rgba( 255, 255, 255, 0.8 );
+}
+
+.bullets li.active {
+cursor: default;
+background: #fff;
+}
+
+@media screen and (max-width: 400px) {
+body {
+font-size: 12px;
+}
+
+.layer h2 {
+font-size: 5em;
+}
+
+.bullets li {
+margin: 0 6px;
+}
+}
+
+.tooltipHenok, .tooltipRandee, .tooltipSian {
+position: relative;
+display: inline-block;
+}
+
+.tooltipHenok .tooltiptext {
+visibility: hidden;
+width: 300px;
+height: 250px;
+background-color: transparent;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+top: -5px;
+right: 105%;
+position: absolute;
+z-index: 1;
+transition: all 0.5s ease;
+}
+
+.tooltipHenok:hover .tooltiptext {
+visibility: visible;
+}
+
+#gd, #sy, #rc {
+width: 60%;
+height: auto;
+position: absolute;
+left:50%;
+}
+
+#sy{
+width: 52%;
+left: 25%;
+margin-top: 40% ;
+}
+
+#rc {
+width: 80%;
+left: 0%;
+}
+
+.tooltipRandee .tooltiptext {
+visibility: hidden;
+background-color: transparent;
+padding: 5px 0;
+border-radius: 6px;
+z-index: 1;
+width: 200px;
+top: 80%;
+left: 40%;
+}
+
+.tooltipRandee:hover .tooltiptext {
+visibility: visible;
+}
+
+.tooltipSian .tooltiptext {
+visibility: hidden;
+width: 300px;
+height: 250px;
+background-color: transparent;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+top: -5px;
+left: 77%;
+position: absolute;
+z-index: 1;
+transition: all 0.5s ease;
+}
+
+.tooltipSian:hover .tooltiptext {
+visibility: visible;
+}
+
+#dd {
+    width: 40%;
+    height: auto;
+}
