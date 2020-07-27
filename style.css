@@ -1,3 +1,55 @@
+.img-container {
+    width: 960px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    border: 0.4rem solid #fff;
+    text-transform: uppercase;
+}
+
+#compList p {
+text-decoration: none;
+padding-bottom: 50px;
+margin-top: 5%;
+font-size: 3em;
+
+}
+
+#ssm, #slpa, #ecc {
+    width: 320px;
+    height: 300px;
+    /* position: absolute; */
+    z-index: 999;
+} 
+
+.jobBlocks {
+    text-align: center;
+    width: 320px;
+    opacity: 1;
+    z-index: 99999;
+}
+
+.jobOne, .jobTwo, .jobThree {
+    position: relative;
+    display: inline-block;   
+    width: 320px;
+    background-color: black;
+
+}
+
+.jobOne p, .jobTwo p, .jobThree p{
+    color: white;
+    font-size: 18pt;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#ssm:hover, #ecc:hover, #slpa:hover {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
 .kontext {
 width: 100%;
 height: 100%;
@@ -136,9 +188,6 @@ animation: hide-left 1s forwards ease;
 100% { transform: translateZ( -200px ); visibility: hidden; }
 }
 
-
-/* Dimmer */
-
 .kontext .layer .dimmer {
 display: block;
 position: absolute;
@@ -162,10 +211,6 @@ background: rgba( 0, 0, 0, 0.7 );
 }
 
 
-
-
-/* Styles for the demo */
-
 html,
 body {
 width: 100%;
@@ -179,7 +224,6 @@ body {
 background-color: #222;
 background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
 background-repeat: repeat;
-
 font-family: Helvetica, sans-serif;
 font-size: 16px;
 color: #fff;
@@ -197,7 +241,6 @@ right: 0;
 margin: 15px 0;
 padding: 0 5px;
 font-family: impact;
-
 text-transform: uppercase;
 color: white;
 letter-spacing: 1px;
@@ -222,6 +265,18 @@ margin: 0;
 font-size: 6.25em;
 }
 
+
+#titleContainer {
+    margin-top: 400px;
+}
+
+#titleContainer h3 {
+    font-size: 3rem;
+}
+
+#titleContainer h4 {
+    font-size: 2rem;
+}
 .layer ul {
 text-align: left;
 font-size: 3em;
@@ -232,7 +287,6 @@ margin-left: 30%;
 text-align: center;
 width: 60%;
 font-size: 18pt;
-/* text-shadow: none; */
 position: absolute;
 left: 17%;
 margin-top: 5%;
@@ -261,15 +315,6 @@ margin-top: -5%;
 width: 30%;
 }
 
-#henok {
-width:auto;
-height: 250px;
-}
-
-#randee {
-width: auto;
-height: 250px;
-}
 
 #sian{
 height: 250px;
@@ -285,44 +330,69 @@ margin: 0;
 .layer.one {
 width: 100%;
 height: 100%;
-background: url("https://wallpapercave.com/wp/wp5614100.jpg");
+background: url("https://i.pinimg.com/originals/05/34/63/053463d7845b32acb0706681807523e7.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 .layer.two {
-background: url("https://cutewallpaper.org/21/harry-potter-desktop-wallpaper-tumblr/Harry-Potter-Desktop-Wallpapers-Top-Free-Harry-Potter-.jpg");
+background: url("https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 .layer.three {
-background: url("https://simplywallpaper.net/pictures/2010/11/22/Hogwarts-Express-Harry-Potter-and-the-Deathly-Hallows-Wallpaper.jpg");
+background: url("https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 .layer.four {
-background: url("https://www.ecopetit.cat/wpic/mpic/190-1907229_harry-potter-hd-desktop-wallpapers-for-19201200-harry.jpg");
+background-color: #000;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 .layer.five {
-background: url("https://cdn.wallpapersafari.com/74/61/Z1vSow.gif");
+background: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
 background-repeat: no-repeat;
 background-size: cover; 
 background-position: left;
 }
 
 .layer.six {
-background: #64b9d2;
+background: url(https://images.unsplash.com/photo-1498354136128-58f790194fa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+background-repeat: no-repeat;
+background-size: cover; 
+background-position: left;
 }
 
+.layer.seven {
+    background: url(https://images.unsplash.com/photo-1498612753354-772a30629934?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: left;
+    }
+
+.layer.eight, .layer.nine {
+    background: url(https://cutewallpaper.org/21/gif-background-hd/Space-Stars-Black-Background-Gif-1920x1080-.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layer.nine {
+    background: url(https://images.unsplash.com/photo-1535083252457-6080fe29be45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+    
+        
 .bullets {
 position: absolute;
 width: 100%;
@@ -368,83 +438,117 @@ margin: 0 6px;
 }
 }
 
-.tooltipHenok, .tooltipRandee, .tooltipSian {
-position: relative;
-display: inline-block;
-}
-
-.tooltipHenok .tooltiptext {
-visibility: hidden;
-width: 300px;
-height: 250px;
-background-color: transparent;
-text-align: center;
-padding: 5px 0;
-border-radius: 6px;
-top: -5px;
-right: 105%;
-position: absolute;
-z-index: 1;
-transition: all 0.5s ease;
-}
-
-.tooltipHenok:hover .tooltiptext {
-visibility: visible;
-}
-
-#gd, #sy, #rc {
-width: 60%;
-height: auto;
-position: absolute;
-left:50%;
-}
-
-#sy{
-width: 52%;
-left: 25%;
-margin-top: 40% ;
-}
-
-#rc {
-width: 80%;
-left: 0%;
-}
-
-.tooltipRandee .tooltiptext {
-visibility: hidden;
-background-color: transparent;
-padding: 5px 0;
-border-radius: 6px;
-z-index: 1;
-width: 200px;
-top: 80%;
-left: 40%;
-}
-
-.tooltipRandee:hover .tooltiptext {
-visibility: visible;
-}
-
-.tooltipSian .tooltiptext {
-visibility: hidden;
-width: 300px;
-height: 250px;
-background-color: transparent;
-text-align: center;
-padding: 5px 0;
-border-radius: 6px;
-top: -5px;
-left: 77%;
-position: absolute;
-z-index: 1;
-transition: all 0.5s ease;
-}
-
-.tooltipSian:hover .tooltiptext {
-visibility: visible;
-}
 
 #dd {
     width: 40%;
     height: auto;
+}
+
+div .neon {
+    font-size: 8rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid whitesmoke;
+    padding: 30px;
+    border-radius: 25px;
+    width: 960px;
+    margin: 0px auto;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 130px #0ff;
+  }
+
+  .sorted, .schooled {
+      width: 80%;
+      margin-left: 10%;
+
+  }
+
+  .sorted img {
+      width: 250px;
+      float: left;
+  }
+  .schooled img {
+    width: 250px;
+    float: right;
+
+}
+
+.sorted ul li, .schooled ul li, #target_comp ul li {
+    font-size: 1.5rem;
+    left: 0;
+}
+.schooled ul li, #target_comp ul li {
+    margin-left: -40%;
+}
+.sorted h4, .schooled h4 {
+    font-size: 4rem;
+    left: 0;
+    margin-bottom: -3%;
+}
+
+.sorted h4 {
+text-align: left;
+}
+
+.schooled h4 {
+    text-align: right;
+    }
+
+    #target_comp ul li p {
+        text-shadow: none;
+        color: rgb(0, 0, 0);
+        text-transform: none;
+        
+    }
+
+#whyContain {
+ text-align: center;
+ font-size: 2.5rem;
+ width: 60%;
+ margin-left: 15%;
+ border: 3px solid white;
+ padding: 5%;
+ border-radius: 25px;
+}
+
+#dog1 {
+    grid-area: dogOne;
+  }
+  #dog2 {
+    grid-area: dogTwo;
+  }
+  #dog3 {
+    grid-area: dogThree;
+  }
+  #table {
+    grid-area: table;
+  }
+.picContainer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "dogOne dogTwo dogThree"
+      "table table table";
+  }
+
+  #dog1, #dog2, #dog3 { 
+      width: 15%;
+      height: auto;
+  }
+
+  #table { 
+    width: 45%;
+    height: auto;
+} 
+
+#qr {
+    background-color:  rgba(255, 255, 255, 0.344) ;
 }
