@@ -4,13 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="style.css" type="text/css" rel="stylesheet">   
+<link href="jobSlide.css" type="text/css" rel="stylesheet">   
+<link href="theWhy.css" type="text/css" rel="stylesheet">  
+<link href="intro.css" type="text/css" rel="stylesheet"> 
+<link href="weekness.css" type="text/css" rel="stylesheet"> 
+<link href="target.css" type="text/css" rel="stylesheet"> 
+<link href="pro.css" type="text/css" rel="stylesheet">    
 <title>Career Coaching Workshop</title>
 <link rel="icon" href="https://images.vexels.com/media/users/3/126890/isolated/preview/1bf7db75659264b93a0195cd146976eb-diamond-gem-doodle-by-vexels.png" type="image/gif" sizes="16x16">
 
 </head>
 <body>
 <article class="kontext">
-    <br><br><br><br><br><br>
+    <!-- <br><br><br><br><br><br> -->
 
 <div class="layer one show" id="title_page">
    <div id="titleContainer">
@@ -27,16 +33,16 @@
 
 <div class="layer two" id="background">
 <h2>Background</h2>
-<br><br><br><br><br><br>
-
 <div class="img-container">
+    <div class="borderBox">
     <div class="jobOne">
         <img class="image" id="ssm" src="./Img/SiansASeniorSM.png" alt="Zumiez | Senior Store Manager" title="Zumiez | Senior Store Manager" />
-
-        <h3 class="jobBlocks">Zumiez | Senior Store Manager.</h3>
+        <h3 class="jobBlocks" id="firstJob">Zumiez | Senior Store Manager.</h3>
         <p class="jobBlocks">Train people, set product, identify trends, make profit. </p>
     </div>
+</div>
 
+<div class="borderBox">
     <div class="jobTwo">
         <img class="image" id="ecc" src="./Img/SiansAnEventPerson.png" alt="Zumiez | Event & Communication Coordinator" title="Zumiez | Event & Communication Coordinator" />
 
@@ -44,13 +50,18 @@
             <h3 >Zumiez | Event & Communication Coordinator.</h3>
             <p class="jobBlocks">Ran events, communication & organized projects for 700+ retail locations.</p>
         </div>
+        </div>
     </div>
 
+    <div class="borderBox"> 
 <div class="jobThree">
 <img class="image" id="slpa" src="./Img/SiansASeniorAnalyst.png" alt="Zumiez | Senior Analyst" title="Zumiez | Senior Analyst" />
 
+
 <h3 class="jobBlocks">Zumiez | Senior Analyst.</h3>
 <p class="jobBlocks">Built out tools to identify trends and loss to guide business decisions.</p>
+
+</div>
 </div>
 </div> 
 <br><br><br>
@@ -63,13 +74,11 @@
 
 <div class="layer three" id="pro_competencies">
 <h2>Professional <br> Competencies</h2>
-<br><br><br><br><br><br>
-<div id="compList">
-<p>Customer Oriented</p>
-<p>Constant Improvement</p>
-<p>Ambition and Initiative</p>
-
-</div>
+    <ul id="proComp">
+        <li>Customer Oriented - </li>
+        <li>Ambition - </li>
+        <li>Constantly Improving</li>
+    </ul>
 </div>
 
 
@@ -80,16 +89,15 @@
 <h2>Weakness </h2>
 <br><br><br><br><br><br><br><br><br><br>
 <div id="weakContainer">
-    <p class="neon">
-        Handling <br> Ambiguity
-    </p>
+
+    <p class="neon" data-text="U">Hand<span class="flicker-slow">l</span>ing <br> A</vr><span class="flicker-fast">m</span>biguity</p>
+    <img src="https://thumbs.gfycat.com/HopefulMenacingAcornbarnacle-max-1mb.gif" class="fix">
 </div>
 </div>
 
 
-<div class="layer five" id="projects">
+<div class="layer five">
 <h2>Projects</h2>
-<br><br><br><br>
 <div class="sorted">
 <h4>Git Sorted</h4>
 <img src="https://media.giphy.com/media/KGqbgFG3MlopCKjjWd/giphy.gif">
@@ -117,14 +125,29 @@
 <div class="layer six" id="target_comp">
   
 <h2>Target Company</h2>
-<br><br><br><br><br><br>
+<p id="if">*...if I didn't already have a great job hereat Code Fellows</p>
 <img id="dd" src="https://www.roia.org/wp-content/uploads/2017/07/Microsoft-Logo-PNG-Transparent-Image.png">
 
-<ul>
-    <li>Vision: <p>Microsoft is a technology company whose mission is to empower every person and every organization on the planet to achieve more. We strive to create local opportunity, growth, and impact in every country around the world.</p></li>
-    <li>Product: <p>Microsoft develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services </p></li>
-    <li>Leader:<p> Satya Nadella </p></li>
-</ul>
+
+<div class="windowOne">
+    <div class="row">
+        <div class="column">
+<p><h4>Vision:</h4><br> Microsoft is a technology company whose mission is to empower every person and every organization on the planet to achieve more. We strive to create local opportunity, growth, and impact in every country around the world.</p>
+</div>
+
+<div class="column">
+<p><h4>Product: </h4><br> Microsoft develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services. </p>
+</div>
+
+<div class="column">
+<p><h4>Leader: </h4><br> Satya Nadella<br>
+<img id="satya" src="https://img.scoop.it/UqE4r7BjdCzKR6c_C90q84XXXL4j3HpexhjNOf_P3YmryPKwJ94QGRtDb3Sbc6KY">
+</p>
+</div>
+
+</div>
+
+</div>
 </div>
 
 
@@ -135,11 +158,12 @@
     <br><br><br><br><br><br>
     <div id="whyContain">
     <p id="myWhy">
-        About a year ago, I taught myself some VBA & SQL, it was exciting to see things work as planned and challenging to figure out where the bugs were! I was motivated, ambitious, & open to change/feedback - the programs I build for my team changed the way everyone worked, it was super fulfilling! I knew this was a skill set I wanted to hone & improve on!
+        In my last position, I took on a project that made me teach myself some VBA & SQL, it was exciting to see things work as planned and challenging to figure out where the bugs were! I was motivated, ambitious, & open to change/feedback - the programs I build for my team changed the way everyone worked, it was super fulfilling! I knew this was a skill set I wanted to hone & improve on!
         <br><br>    
         I hope to gain a strong understanding of how to develop software and how different programming languages can be used to accomplish different tasks.
 
     </p>
+
     </div>
     </div>
 
@@ -150,8 +174,8 @@
 
     <div class="layer eight" id="fun_factor">
         <h2>Fun Factor</h2>
- 
-        <br><br><br><br> <br><br><br><br>
+        <br><br>
+        <br><br>
         <div id='picContainer'>
             <img id="dog1" src="./Img/Geds.jpg">
             <img id="dog2" src="./Img/lzm.jpg">
@@ -165,7 +189,7 @@
 
         <div class="layer nine" id="closing">
             <h2>Thank you!!</h2>
-            <br><br><br><br><br><br>
+            <br><br><br>
             <img id="qr" src="./Img/Socia1.png">
             </div>
             </article>
