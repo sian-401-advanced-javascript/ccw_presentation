@@ -608,9 +608,13 @@ background: yellowgreen;
     width: 250px;
 }
 
-
+#whyContain h4 {
+    font-family: 'Pacifico', cursive;
+    color: rgb(131, 187, 0);
+}
 
 #whyContain {
+    text-transform: none;
 text-align: center;
 font-size: 2rem;
 width: 50%;
