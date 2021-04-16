@@ -136,12 +136,13 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 #proComp {
-    font-size: 2em; 
+    font-size: 2.2em; 
     display: inline-block;
     text-align: center;
    width: 960px;
     margin: 0;
     margin-top: 100px;
+
 }
 
 ul#proComp li{
@@ -443,7 +444,7 @@ width: 100%;
 bottom: 20px;
 padding: 0;
 margin: 0;
-text-align: center;
+text-align: right;
 }
 
 .bullets li {
@@ -478,7 +479,6 @@ background: #fff;
 
 div .neon {
   font-size: 80px;
-  /* -webkit-text-stroke: 1px ; */
   color: #FFD5FF;
   position: absolute;
   font-family: arial;
